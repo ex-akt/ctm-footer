@@ -1,0 +1,15 @@
+@import "vars";
+
+footer{
+    background: var(--f-bg);
+    margin-top: var(--f-mt);
+    position: relative;
+
+    &>.inside{
+        position: relative;
+
+        max-width: var(--art-wdth, auto);
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}

@@ -1,7 +1,7 @@
 <?php return [
     'palettes' => [
         'default'  =>
-            '{footer:hide},f-background;'
+            '{footer:hide},f-background,f-mt;'
     ],
     'fields'   => [
         // Footer
@@ -12,11 +12,12 @@
             'eval'                    => ['placeholder'=>'rgba(255,255,255,1)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w33 wizard clr'],
         ],
          // Header
-        'foot-bg' => [
-            'default'                 => 'transparent',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['foot-bg'],
-            'inputType'               => 'text',
-            'eval'                    => ['placeholder'=>'transparent', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w100 wizard clr'],
+        'f-mt' => [
+            'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"4";}',
+            'label'                   => '$f-mt',
+            'inputType'               => 'inputUnit',
+            'options'                 => $cssUnits,
+            'eval'                    => ['placeholder'=>'4rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w25 clr'],
         ],
     ]
 ];
