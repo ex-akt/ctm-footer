@@ -7,7 +7,7 @@
         // Footer
         'f-background' => [
             'default'                 => 'rgba(255,255,255,1)',
-            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['f-background-start'],
+            'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['f-background'],
             'inputType'               => 'text',
             'eval'                    => ['placeholder'=>'rgba(255,255,255,1)', 'maxlength'=>255, 'colorpicker'=>true, 'decodeEntities'=>true, 'tl_class'=>'w33 wizard clr'],
         ],
