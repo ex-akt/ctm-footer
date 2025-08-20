@@ -16,8 +16,8 @@
             'default'                 => 'a:2:{s:4:"unit";s:3:"rem";s:5:"value";s:1:"4";}',
             'label'                   => &$GLOBALS['TL_LANG']['tl_thememanager']['f-mt'],
             'inputType'               => 'inputUnit',
-            'options'                 => $cssUnits,
-            'eval'                    => ['placeholder'=>'4rem', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w25 clr'],
+            'options'                 => $GLOBALS['CTM_CSS_UNITS'],
+            'eval'                    => ['placeholder'=>'4', 'includeBlankOption'=>true, 'rgxp'=>'digit_inherit', 'maxlength'=>255, 'tl_class'=>'w25 clr'],
         ],
     ]
 ];
